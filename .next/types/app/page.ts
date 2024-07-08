@@ -1,4 +1,4 @@
-// File: D:\My Project\Portfolio 3d Next js\Naved Portfolio\app\page.tsx
+// File: C:\Users\91860\OneDrive\Documents\GitHub\Simon-Game\abdul\app\page.tsx
 import * as entry from '../../../app/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

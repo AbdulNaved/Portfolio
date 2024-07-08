@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
+
 const ContactForm = () => {
   const initialFormData = {
     name: "",
@@ -26,11 +27,16 @@ const ContactForm = () => {
     setIsSubmitting(true);
 
     emailjs
-      .sendForm(
-        "service_cqwrf4f",
-        "template_apka79n",
-        e.target,
-        "rFahnMuuydWo8Bmfv"
+      .send(
+        "service_2opwl6d",
+        "template_ncjjaie",
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          subject: formData.subject,
+          message: formData.message,
+        },
+        "-8PXX24sNkJ7I-bWQ"
       )
       .then(
         (result) => {
@@ -111,7 +117,6 @@ const ContactForm = () => {
             ></textarea>
           </div>
           <button
-             //href={linkField}
             className={
               "group relative flex w-fit items-center text-slate-800 justify-center overflow-hidden rounded-md border-2 border-slate-900 bg-slate-50  px-4 py-2 font-bold transition-transform ease-out  hover:scale-105"
             }
@@ -130,3 +135,4 @@ const ContactForm = () => {
 };
 
 export default ContactForm;
+

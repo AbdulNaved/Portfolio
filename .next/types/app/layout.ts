@@ -1,4 +1,4 @@
-// File: D:\My Project\Portfolio 3d Next js\Naved Portfolio\app\layout.tsx
+// File: C:\Users\91860\OneDrive\Documents\GitHub\Simon-Game\abdul\app\layout.tsx
 import * as entry from '../../../app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
