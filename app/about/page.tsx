@@ -1,16 +1,16 @@
-import Bounded from "@/components/Bounded";
 import React from "react";
+import Bounded from "@/components/Bounded";
 import Heading from "@/components/Heading";
 import Button from "@/components/Button";
 import Avatar from "./_components/Avatar";
 import TechList from "./_components/TechList";
 import Experience from "./_components/Experience";
 
-const page = () => {
+const Page = () => {
   return (
     <div className="overflow-hidden">
       <Bounded className="overflow-hidden">
-        <div className="grid gap-x-8  gap-y-6 md:grid-cols[2fr,1fr]">
+        <div className="grid gap-x-8 gap-y-6 md:grid-cols-[2fr,1fr]">
           <Heading as="h1" size="xl" className="col-start-1">
             Abdul Naved
           </Heading>
@@ -40,8 +40,9 @@ const page = () => {
           </div>
           <Button
             showIcon
-            linkField="https://drive.google.com/file/d/1cDMgsCtMK5npFEKLhdawQKBYOcTtFiuJ/view?usp=drivesdk "
+            linkField="https://drive.google.com/file/d/1cDMgsCtMK5npFEKLhdawQKBYOcTtFiuJ/view?usp=drivesdk"
             label="Resume"
+            className="col-start-1 md:col-start-auto"
           />
           <Avatar
             image="/image/Avatar.jpg"
@@ -60,4 +61,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
